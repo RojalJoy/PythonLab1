@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+button{
+    margin: 10px;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  
+
+  .navbar{
+      width: 100%;
+      background-color: rgb(1, 1, 44);
+      overflow: auto;
+  }
+  .navbar a{
+      float: left;
+      padding: 12px;
+      background-color: rgb(1, 1, 44);
+      color: rgb(250, 245, 245);
+      text-decoration: none;
+      font-size: 20px;
+  }
+  .navbar a:hover{
+      background-color: rgb(250, 245, 245);
+      color: rgb(1, 1, 44);
+  }
+  .active{
+      background-color: aquamarine;
+  }
+
+  h4{
+    color: black;
+  }
+  .rent{
+    font-size: large;
+    background-color:chartreuse;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+.contact{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: chartreuse;
+}
+
+  </style>
+
+    </head>
+    <body>
+       
+                <div class="navbar">
+                    <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Home</a>
+                    <a href="#"><i class="fa solid fa-camera"></i>Gallary</a>
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+                </div>
+                <div class="rent">
+                    <h2>Games we rent :</h2>
+                    <ol>
+                        <li>Far Cry 3</li>
+                        <li>Assasin's Creed 1</li>
+                        <li>Assasin's Creed 2</li>
+                        <li>Bioshock </li>
+                        <li>Bioshock 2</li>
+                        <li>Halo Reach</li>
+                    </ol>
+                </div>
+                <div class="contact">
+        <h2>For games contact: </h2>
+        <div class="container">
+        <form action="/action_page.php">
+        <div class="form1">
+            <label for="name">Name : </label>
+            <input type="name" class="form-control" id="name" placeholder="Enter your name" name="name">
+        </div>
+
+        <div class="form1">
+            <label for="email">Email : </label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+        </div>
+
+        <div class="form1">
+            <label for="Game">The game you want to rent:</label>
+            <input type="text" class="form-control" id="text" placeholder="Enter the game" name="text">
+        </div>
+
+      
+        <div class="form1">
+            <label for="Query">Query :</label>
+            <textarea id="Query" name="Query" rows="4" cols="125"></textarea>
+        </div>
+       
+    </div>
+    
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Submit</button>
+
+
+    </form>
+                </div>
+    </body>
+
+</html>
